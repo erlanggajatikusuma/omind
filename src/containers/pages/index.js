@@ -83,7 +83,7 @@ const DiscussPage = () => {
           <Picker
             selectedValue={state.jenjang}
             onValueChange={(itemValue, itemIndex) =>
-              setState({jenjang: itemValue})
+              setState({...state, jenjang: itemValue})
             }>
             <Picker.Item label="Jenjang" value="" />
             <Picker.Item label="SD" value="sd" />
